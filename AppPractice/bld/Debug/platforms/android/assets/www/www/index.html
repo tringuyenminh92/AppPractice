@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>AppPractice</title>
+
+    <!-- AppPractice references -->
+    <link href="app/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+
+    <link href="app/css/lib/font-awesome/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="app/css/lib/onsen/onsenui.css" rel="stylesheet" />
+    <link href="app/css/lib/onsen/onsen-css-components.css" rel="stylesheet" />
+
+    <link href="app/css/layoutStyle.css" rel="stylesheet" />
+</head>
+<body ng-app="GlobalModule">
+    <p>Hello, your application is ready!</p>
+    <a href="#/goto">move</a>
+
+
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="app/scripts/index.js"></script>
+    <script src="app/scripts/platformOverrides.js"></script>
+
+    <script src="app/scripts/lib/angular/angular.min.js"></script>
+
+    <!-- load jquery after angular to fix:
+    Onsen UI require jqLite. Load jQuery after loading AngularJS to fix this error.
+    jQuery may break Onsen UI behavior. -->
+    <script src="app/scripts/lib/jquery/jquery.min.js"></script>
+
+    <script src="app/scripts/lib/angular/angular-route.min.js"></script>
+    <script src="app/scripts/lib/angular/angular-sanitize.min.js"></script>
+    <script src="app/scripts/lib/angular/angular-animate.js"></script>
+    <script src="app/scripts/lib/angular/angular-touch.min.js"></script>
+
+    <script src="app/scripts/lib/onsen/onsenui.min.js"></script>
+
+    <script src="app/scripts/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="app/scripts/lib/bootstrap/bootstrap-typeahead.min.js"></script>
+
+    <script src="app/scripts/lib/Custom/MyApp.js"></script>
+</body>
+</html>

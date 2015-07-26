@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html ng-app="GlobalModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>AppPractice</title>
+
+    <!-- AppPractice references -->
+    <link href="app/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+
+    <link href="app/css/lib/font-awesome/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="app/css/lib/onsen/onsenui.css" rel="stylesheet" />
+    <link href="app/css/lib/onsen/onsen-css-components.css" rel="stylesheet" />
+
+    <link href="app/css/layoutStyle.css" rel="stylesheet" />
+
+</head>
+<body >
+    <ons-navigator title="Navigator" var="myNavigator">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">Navigation Animations</div>
+            </ons-toolbar>
+
+            <ons-list>
+                <ons-list-item modifier="chevron" ng-click="myNavigator.pushPage('app/views/about.html', { animation : 'slide' } )">
+                    Slide Animation
+                </ons-list-item>
+                <ons-list-item modifier="chevron" ng-click="myNavigator.pushPage('app/views/albums.html', { animation: 'lift' })">
+                    Lift Animation
+                </ons-list-item>
+                <ons-list-item modifier="chevron" ng-click="myNavigator.pushPage('app/views/options.html', { animation: 'fade' })">
+                    Fade Animation
+                </ons-list-item>
+            </ons-list>
+        </ons-page>
+    </ons-navigator>
+
+ 
+
+    
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="app/scripts/index.js"></script>
+    <script src="app/scripts/platformOverrides.js"></script>
+
+    <script src="app/scripts/lib/angular/angular.min.js"></script>
+
+    <!-- load jquery after angular to fix:
+        Onsen UI require jqLite. Load jQuery after loading AngularJS to fix this error.
+        jQuery may break Onsen UI behavior. -->
+    <script src="app/scripts/lib/jquery/jquery.min.js"></script>
+
+    <script src="app/scripts/lib/angular/angular-route.min.js"></script>
+    <script src="app/scripts/lib/angular/angular-sanitize.min.js"></script>
+    <script src="app/scripts/lib/angular/angular-animate.js"></script>
+    <script src="app/scripts/lib/angular/angular-touch.min.js"></script>
+
+    <script src="app/scripts/lib/onsen/onsenui.min.js"></script>
+
+    <script src="app/scripts/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="app/scripts/lib/bootstrap/bootstrap-typeahead.min.js"></script>
+
+    <script src="app/scripts/lib/Custom/MyApp.js"></script>
+</body>
+</html>
