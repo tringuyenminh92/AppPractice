@@ -110,6 +110,8 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="www\app\css\details.css" />
+    <Content Include="www\app\css\images\marc.jpg" />
     <Content Include="www\app\css\layoutStyle.css" />
     <Content Include="www\app\css\lib\bootstrap\bootstrap-theme.css" />
     <Content Include="www\app\css\lib\bootstrap\bootstrap-theme.css.map" />
@@ -144,6 +146,10 @@
     <Content Include="www\app\css\lib\onsen\onsen-css-components-sunshine-theme.css" />
     <Content Include="www\app\css\lib\onsen\onsen-css-components.css" />
     <Content Include="www\app\css\lib\onsen\onsenui.css" />
+    <Content Include="www\app\images\bottoms.jpeg" />
+    <Content Include="www\app\images\dresses.jpeg" />
+    <Content Include="www\app\images\lookbooks.jpeg" />
+    <Content Include="www\app\images\tops.jpeg" />
     <Content Include="www\app\scripts\index.js" />
     <Content Include="www\app\scripts\lib\angular\angular-animate.js" />
     <Content Include="www\app\scripts\lib\angular\angular-animate.min.js" />
@@ -192,7 +198,9 @@
     <Content Include="www\app\scripts\lib\onsen\onsenui_all.js" />
     <Content Include="www\app\scripts\lib\onsen\onsenui_all.min.js" />
     <Content Include="www\app\scripts\platformOverrides.js" />
+    <Content Include="www\app\views\about.html" />
     <Content Include="www\app\views\albums.html" />
+    <Content Include="www\app\views\options.html" />
     <Content Include="www\index.html" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
@@ -208,8 +216,6 @@
     <Folder Include="res\screens\ios\" />
     <Folder Include="res\screens\windows\" />
     <Folder Include="res\screens\wp8\" />
-    <Folder Include="www\app\data\" />
-    <Folder Include="www\app\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="config.xml">

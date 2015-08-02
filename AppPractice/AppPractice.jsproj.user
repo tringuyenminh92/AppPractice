@@ -5,6 +5,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\BeGa\AppData\Local\Temp\f4okmt4f_AppPractice_refcache</ReferenceCachePath>
-    <ShowAllFiles>true</ShowAllFiles>
+    <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
 </Project>

@@ -16,12 +16,14 @@
  *************************************************************/
 
 (function () {
+   
+
     "use strict";
 
      angular.module('GlobalModule', ['onsen', 'ngAnimate', 'ngRoute', 'ngSanitize', 'ngTouch']);
 
     console.log('app starting', navigator.userAgent);
-
+  
     // config settings flag, to indicate which kind of service 
     // will be used: localservice, webapi service,...
     angular.module("GlobalModule").configuration = {

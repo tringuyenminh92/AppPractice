@@ -40,10 +40,14 @@ C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\index.html \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\images \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\views \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\details.css \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\images \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\layoutStyle.css \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\images\marc.jpg \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib\bootstrap \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib\font-awesome \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib\fonts \
@@ -84,6 +88,10 @@ C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib\onsen\onsen-css-components-sunshine-theme.css \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib\onsen\onsen-css-components.css \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\css\lib\onsen\onsenui.css \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\images\bottoms.jpeg \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\images\dresses.jpeg \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\images\lookbooks.jpeg \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\images\tops.jpeg \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts\index.js \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts\lib \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts\platformOverrides.js \
@@ -138,5 +146,7 @@ C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts\lib\onsen\onsenui.min.js \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts\lib\onsen\onsenui_all.js \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\scripts\lib\onsen\onsenui_all.min.js \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\views\about.html \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\views\albums.html \
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\assets\www\www\app\views\options.html \
 C:\Users\BeGa\Documents\Visual Studio 2013\Projects\AppPractice\AppPractice\bld\Debug\platforms\android\ant-build\AndroidManifest.xml \

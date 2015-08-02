@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="GlobalModule">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,16 +12,185 @@
     <link href="app/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="app/css/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
 
+    <link href="app/css/lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
     <link href="app/css/lib/font-awesome/font-awesome.min.css" rel="stylesheet" />
 
     <link href="app/css/lib/onsen/onsenui.css" rel="stylesheet" />
     <link href="app/css/lib/onsen/onsen-css-components.css" rel="stylesheet" />
+    <link href="app/css/lib/onsen/onsen-css-components-blue-basic-theme.css" rel="stylesheet" />
 
+    <link href="app/css/details.css" rel="stylesheet" />
     <link href="app/css/layoutStyle.css" rel="stylesheet" />
 </head>
-<body ng-app="GlobalModule">
-    <p>Hello, your application is ready!</p>
-    <a href="#/goto">move</a>
+<body>
+    <ons-navigator var="rootNav">
+        <ons-page>
+            <ons-tabbar var="app" animation="fade">
+                <ons-tab active="true"
+                         label="Home"
+                         icon="home"
+                         page="HomePage.html">
+                    <ons-page>
+                    </ons-page>
+
+                </ons-tab>
+                <ons-tab label="Create Item"
+                         icon="plus"
+                         page="ppabout.html">
+                    <ons-page>
+                    </ons-page>
+                </ons-tab>
+                <ons-tab label="View Items"
+                         icon="fa-lightbulb-o"
+                         page="browse.html"></ons-tab>
+                <ons-tab label="Settings"
+                         icon="gear"
+                         page="page3.html"></ons-tab>
+            </ons-tabbar>
+        </ons-page>
+    </ons-navigator>
+
+    <ons-template id="about.html">
+        <ons-navigator var="app">
+            <ons-page>
+                <ons-list>
+                    <ons-list-header>Android Versions</ons-list-header>
+
+                    <ons-list-item modifier="chevron" onclick="app.pushPage('page1.html', { animation: 'slide' })">KitKat</ons-list-item>
+                    <ons-list-item modifier="chevron">Jelly Bean</ons-list-item>
+                    <ons-list-item modifier="chevron">Honycomb</ons-list-item>
+
+                    <ons-list-header>Mac OS X Versions</ons-list-header>
+
+                    <ons-list-item modifier="chevron">Mavericks</ons-list-item>
+                    <ons-list-item modifier="chevron">Mountain Lion</ons-list-item>
+                    <ons-list-item modifier="chevron">Lion</ons-list-item>
+                    <ons-list-item modifier="chevron">SnowLeopard</ons-list-item>
+
+                </ons-list>
+            </ons-page>
+        </ons-navigator>
+    </ons-template>
+
+
+    <ons-template id="page1.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Back</ons-back-button></div>
+                <div class="center">Page 2</div>
+            </ons-toolbar>
+            <div style="text-align: center; margin-top: 100px;">
+                <ons-button modifier="light" onclick="myNavigator.popPage()">
+                    Pop Page
+                </ons-button>
+            </div>
+        </ons-page>
+    </ons-template>
+
+  
+    <!--<ons-navigator title="Navigator" var="myNavigator">
+
+        <ons-tabbar>
+            <ons-tab page="HomePage.html" label="Home" icon="ion-home" active="true"></ons-tab>
+            <ons-tab page="app/views/about.html" label="Sale Off" icon="ion-ios-pricetags"></ons-tab>
+            <ons-tab page="HomePage.html" label="Search" icon="ion-search"></ons-tab>
+            <ons-tab page="HomePage.html">
+                <ons-icon icon="ion-android-cart">
+                    <div class="notification menu-notification">3</div>
+                </ons-icon>
+            </ons-tab>
+            <ons-tab page="HomePage.html" label="More" icon="ion-navicon-round"></ons-tab>
+        </ons-tabbar>
+    </ons-navigator>-->
+
+
+
+    <ons-template id="HomePage.html">
+        <ons-navigator>
+            <ons-page modifier="shop-details">
+                <div class="">
+                    <img src="app/css/images/marc.jpg" class="img-responsive img-thumbnail" />
+                    <!--<div class="card-name">Marc</div>
+                    <div class="card-desc">The New LookBook 08/2015</div>-->
+                </div>
+                <div class="rating">
+                    <div class="rating-num">
+                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
+                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
+                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
+                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
+                        <ons-icon icon="ion-ios-star-half" fixed-width="false"></ons-icon>
+                        4.5
+                    </div>
+                </div>
+
+                <ons-list style="border-top: none">
+                    <ons-list-item style="line-height: 1; padding: 0;">
+                        <ons-row class="action">
+
+                            <ons-col class="action-col">
+                                <div class="action-icon"><ons-icon icon="ion-ios-star-half"></ons-icon></div>
+                                <div class="action-label">Rate</div>
+                            </ons-col>
+
+                            <ons-col class="action-col">
+                                <div class="action-icon"><ons-icon icon="ion-bookmark"></ons-icon></div>
+                                <div class="action-label">Favorite</div>
+                            </ons-col>
+
+                            <ons-col class="action-col">
+                                <div class="action-icon"><ons-icon icon="ion-share"></ons-icon></div>
+                                <div class="action-label">Share</div>
+                            </ons-col>
+
+                            <ons-col class="action-col">
+                                <div class="action-icon"><ons-icon icon="ion-compose"></ons-icon></div>
+                                <div class="action-label">Check In</div>
+                            </ons-col>
+
+                        </ons-row>
+                    </ons-list-item>
+                </ons-list>
+
+                <ons-list style="margin-top: 12px;">
+                    <ons-list-item modifier="chevron">
+                        <!--<div class="prop-desc">
+                            <ons-icon icon="ion-ios-location" size="28px"></ons-icon>
+                            Shop The LookBook
+                        </div>-->
+                        <img src="app/images/lookbooks.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    </ons-list-item>
+
+                    <ons-list-item modifier="chevron">
+                        <!--<div class="prop-desc">
+                            <ons-icon icon="ion-ios-location" size="28px"></ons-icon>
+                            Dresses
+                        </div>-->
+                        <img src="app/images/dresses.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    </ons-list-item>
+
+                    <ons-list-item modifier="chevron">
+                        <!--<ons-icon icon="ion-iphone" size="28px"></ons-icon>
+                        Tops-->
+                        <img src="app/images/tops.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    </ons-list-item>
+
+                    <ons-list-item>
+                        <!--<ons-icon icon="ion-android-cart"></ons-icon>
+                        Bottoms-->
+                        <img src="app/images/bottoms.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    </ons-list-item>
+
+                </ons-list>
+
+            </ons-page>
+
+        </ons-navigator>
+
+    </ons-template>
+
+
+
 
 
 
