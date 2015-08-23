@@ -23,55 +23,21 @@
     <link href="app/css/layoutStyle.css" rel="stylesheet" />
 </head>
 <body>
-    <ons-navigator var="rootNav">
-        <ons-page>
-            <ons-tabbar var="app" animation="fade">
-                <ons-tab active="true"
-                         label="Home"
-                         icon="home"
-                         page="HomePage.html">
-                    <ons-page>
-                    </ons-page>
 
-                </ons-tab>
-                <ons-tab label="Create Item"
-                         icon="plus"
-                         page="app/views/about.html">
-                </ons-tab>
-                <ons-tab label="View Items"
-                         icon="fa-lightbulb-o"
-                         page="browse.html"></ons-tab>
-                <ons-tab label="Settings"
-                         icon="gear"
-                         page="page3.html"></ons-tab>
-            </ons-tabbar>
-        </ons-page>
-    </ons-navigator>
-
-
-    <ons-template id="page1.html">
-        <ons-page>
-            <ons-toolbar>
-                <div class="left"><ons-back-button>Back</ons-back-button></div>
-                <div class="center">Page about</div>
-            </ons-toolbar>
-            <div style="text-align: center; margin-top: 100px;">
-                <ons-button modifier="light" onclick="myNavigator.popPage()">
-                    Pop Page
-                </ons-button>
+    <ons-navigator title="Navigator" var="myNavigator">
+        <ons-toolbar>
+            <div class="left navigation-bar__title">JackThread</div>
+            <div class="right">
+                <ons-toolbar-button>
+                    <ons-icon icon="ion-ios-search"></ons-icon>
+                </ons-toolbar-button>
             </div>
-        </ons-page>
-
-    </ons-template>
-
-
-
-    <!--<ons-navigator title="Navigator" var="myNavigator">
+        </ons-toolbar>
 
         <ons-tabbar>
             <ons-tab page="HomePage.html" label="Home" icon="ion-home" active="true"></ons-tab>
-            <ons-tab page="app/views/about.html" label="Sale Off" icon="ion-ios-pricetags"></ons-tab>
-            <ons-tab page="HomePage.html" label="Search" icon="ion-search"></ons-tab>
+            <ons-tab page="app/views/about.html" label="Category" icon="ion-ios-browsers"></ons-tab>
+            <ons-tab page="HomePage.html" label="Sale" icon="ion-ios-pricetag"></ons-tab>
             <ons-tab page="HomePage.html">
                 <ons-icon icon="ion-android-cart">
                     <div class="notification menu-notification">3</div>
@@ -79,96 +45,86 @@
             </ons-tab>
             <ons-tab page="HomePage.html" label="More" icon="ion-navicon-round"></ons-tab>
         </ons-tabbar>
-    </ons-navigator>-->
-
+    </ons-navigator>
 
 
     <ons-template id="HomePage.html">
         <ons-navigator>
-            <ons-page modifier="shop-details">
-                <div class="">
-                    <img src="app/css/images/marc.jpg" class="img-responsive img-thumbnail" />
-                    <!--<div class="card-name">Marc</div>
-                    <div class="card-desc">The New LookBook 08/2015</div>-->
-                </div>
-                <div class="rating">
-                    <div class="rating-num">
-                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
-                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
-                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
-                        <ons-icon icon="ion-ios-star" fixed-width="false"></ons-icon>
-                        <ons-icon icon="ion-ios-star-half" fixed-width="false"></ons-icon>
-                        4.5
-                    </div>
+            <ons-page modifier="">
+
+                <!-- Banner -->
+                <div>
+                    <img src="app/images/banner.jpg" class="bannerStyle" />
+                    <div class="card-desc">COVER YOUR ANKLES</div>
                 </div>
 
-                <ons-list style="border-top: none">
-                    <ons-list-item style="line-height: 1; padding: 0;">
-                        <ons-row class="action">
+                <!-- List carousel scroll -->
+                <ons-list>
+                    <ons-list-item style=" line-height :1">
 
-                            <ons-col class="action-col">
-                                <div class="action-icon"><ons-icon icon="ion-ios-star-half"></ons-icon></div>
-                                <div class="action-label">Rate</div>
-                            </ons-col>
+                        <ons-row>
+                            <ons-scroller style="height: 85px;">
+                                <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel" initial-index="1">
 
-                            <ons-col class="action-col">
-                                <div class="action-icon"><ons-icon icon="ion-bookmark"></ons-icon></div>
-                                <div class="action-label">Favorite</div>
-                            </ons-col>
+                                    <ons-carousel-item style="background-color: green">
+                                        <ons-carousel-item-cover class="cover-label-carousel">Coats & outerwear</ons-carousel-item-cover>
+                                    </ons-carousel-item>
 
-                            <ons-col class="action-col">
-                                <div class="action-icon"><ons-icon icon="ion-share"></ons-icon></div>
-                                <div class="action-label">Share</div>
-                            </ons-col>
+                                    <ons-carousel-item style="background-color: orange">
+                                        <ons-carousel-item-cover class="cover-label-carousel">Dresses</ons-carousel-item-cover>
+                                    </ons-carousel-item>
 
-                            <ons-col class="action-col">
-                                <div class="action-icon"><ons-icon icon="ion-compose"></ons-icon></div>
-                                <div class="action-label">Check In</div>
-                            </ons-col>
 
+                                    <ons-carousel-item style="background-color: pink">
+                                        <ons-carousel-item-cover class="cover-label-carousel">Bottoms</ons-carousel-item-cover>
+                                    </ons-carousel-item>
+
+                                    <!--  <ons-carousel-cover><div class="cover-label">Swipe left or right</div></ons-carousel-cover>-->
+                                </ons-carousel>
+                            </ons-scroller>
                         </ons-row>
                     </ons-list-item>
                 </ons-list>
 
+                <!-- List category and sale on -->
                 <ons-list style="margin-top: 12px;">
-                    <ons-list-item modifier="chevron">
-                        <!--<div class="prop-desc">
-                            <ons-icon icon="ion-ios-location" size="28px"></ons-icon>
-                            Shop The LookBook
-                        </div>-->
-                        <img src="app/images/lookbooks.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    <ons-list-item class="noPadding">
+                        <img src="app/images/falljacket.jpg" class="lookbookImageStyle" />
+                        <ons-carousel-item-cover class="cover-label">FALL JACKETS</ons-carousel-item-cover>
                     </ons-list-item>
 
-                    <ons-list-item modifier="chevron">
-                        <!--<div class="prop-desc">
-                            <ons-icon icon="ion-ios-location" size="28px"></ons-icon>
-                            Dresses
-                        </div>-->
-                        <img src="app/images/dresses.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    <ons-list-item class="noPadding">
+                        <img src="app/images/nextSeason.jpg" class="lookbookImageStyle" />
+                        <ons-carousel-item-cover class="cover-label">NEXT SEASON'S ESSENTIALS</ons-carousel-item-cover>
                     </ons-list-item>
 
-                    <ons-list-item modifier="chevron">
-                        <!--<ons-icon icon="ion-iphone" size="28px"></ons-icon>
-                        Tops-->
-                        <img src="app/images/tops.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    <ons-list-item class="noPadding">
+                        <img src="app/images/burton.jpg" class="lookbookImageStyle" />
+                        <ons-carousel-item-cover class="cover-label">
+                            BURTON X JT EXCLUSIVE COLLABORATION
+                        </ons-carousel-item-cover>
                     </ons-list-item>
 
-                    <ons-list-item>
-                        <!--<ons-icon icon="ion-android-cart"></ons-icon>
-                        Bottoms-->
-                        <img src="app/images/bottoms.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    <ons-list-item class="noPadding">
+                        <img src="app/images/getthebest.jpg" class="lookbookImageBiggerStyle" />
+                        <ons-carousel-item-cover class="cover-label">GET THE BEST OF THE BEST</ons-carousel-item-cover>
+                    </ons-list-item>
+
+                    <ons-list-item class="noPadding">
+                        <img src="app/images/upto50.jpg" class="lookbookImageBiggerStyle" />
+                        <div class="card-desc">OUR BEST BRANDS ARE FINALLY ON SALE</div>
+                    </ons-list-item>
+
+                    <ons-list-item class="noPadding">
+                        <img src="app/images/onsale.jpg" class="lookbookImageBiggerStyle" />
+                        <div class="card-desc">EXTRA 25% OFF</div>
                     </ons-list-item>
 
                 </ons-list>
 
             </ons-page>
-
         </ons-navigator>
-
     </ons-template>
-
-
-
 
 
 

@@ -27,11 +27,13 @@
 }
 
 .card-desc {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     opacity: 0.9;
     text-align: center;
     line-height: 1.4;
+    padding-bottom: 15px;
+    background-color: white;
 }
 
 .rating {

@@ -1,46 +1,14 @@
 {
   "changedFilesIos": [
-    "www\\index.html",
-    "www\\app\\css\\details.css",
-    "www\\app\\scripts\\lib\\Custom\\MyApp.js",
-    "www\\app\\css\\images\\marc.jpg",
-    "www\\app\\images\\lookbooks.jpeg",
-    "www\\app\\images\\dresses.jpeg",
-    "www\\app\\images\\tops.jpeg",
-    "www\\app\\images\\bottoms.jpeg",
-    "www\\app\\css\\lib\\onsen\\onsen-css-components.css",
-    "www\\app\\css\\lib\\onsen\\onsenui.css",
-    "www\\app\\views\\about.html",
-    "www\\app\\views\\options.html"
+    "www\\index.html"
   ],
-  "deletedFilesIos": [
-    "www\\app\\css\\lib\\ionicons\\css\\onsen-css-components.css",
-    "www\\app\\css\\images\\marc_03.jpg",
-    "www\\app\\css\\images\\marc_02.png",
-    "www\\app\\css\\images\\marc_01.png"
-  ],
+  "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\index.html",
-    "www\\app\\css\\details.css",
-    "www\\app\\scripts\\lib\\Custom\\MyApp.js",
-    "www\\app\\css\\images\\marc.jpg",
-    "www\\app\\images\\lookbooks.jpeg",
-    "www\\app\\images\\dresses.jpeg",
-    "www\\app\\images\\tops.jpeg",
-    "www\\app\\images\\bottoms.jpeg",
-    "www\\app\\css\\lib\\onsen\\onsen-css-components.css",
-    "www\\app\\css\\lib\\onsen\\onsenui.css",
-    "www\\app\\views\\about.html",
-    "www\\app\\views\\options.html"
+    "www\\index.html"
   ],
-  "deletedFiles": [
-    "www\\app\\css\\lib\\ionicons\\css\\onsen-css-components.css",
-    "www\\app\\css\\images\\marc_03.jpg",
-    "www\\app\\css\\images\\marc_02.png",
-    "www\\app\\css\\images\\marc_01.png"
-  ],
+  "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
 }

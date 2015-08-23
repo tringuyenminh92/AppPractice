@@ -23,61 +23,13 @@
     <link href="app/css/layoutStyle.css" rel="stylesheet" />
 </head>
 <body>
-    <ons-navigator var="rootNav">
-        <ons-page>
-            <ons-tabbar var="app" animation="fade">
-                <ons-tab active="true"
-                         label="Home"
-                         icon="home"
-                         page="HomePage.html">
-                    <ons-page>
-                    </ons-page>
-
-                </ons-tab>
-                <ons-tab label="Create Item"
-                         icon="plus"
-                         page="ppabout.html">
-                    <ons-page>
-                    </ons-page>
-                </ons-tab>
-                <ons-tab label="View Items"
-                         icon="fa-lightbulb-o"
-                         page="browse.html"></ons-tab>
-                <ons-tab label="Settings"
-                         icon="gear"
-                         page="page3.html"></ons-tab>
-            </ons-tabbar>
-        </ons-page>
-    </ons-navigator>
-
-    <ons-template id="about.html">
-        <ons-navigator var="app">
-            <ons-page>
-                <ons-list>
-                    <ons-list-header>Android Versions</ons-list-header>
-
-                    <ons-list-item modifier="chevron" onclick="app.pushPage('page1.html', { animation: 'slide' })">KitKat</ons-list-item>
-                    <ons-list-item modifier="chevron">Jelly Bean</ons-list-item>
-                    <ons-list-item modifier="chevron">Honycomb</ons-list-item>
-
-                    <ons-list-header>Mac OS X Versions</ons-list-header>
-
-                    <ons-list-item modifier="chevron">Mavericks</ons-list-item>
-                    <ons-list-item modifier="chevron">Mountain Lion</ons-list-item>
-                    <ons-list-item modifier="chevron">Lion</ons-list-item>
-                    <ons-list-item modifier="chevron">SnowLeopard</ons-list-item>
-
-                </ons-list>
-            </ons-page>
-        </ons-navigator>
-    </ons-template>
 
 
     <ons-template id="page1.html">
         <ons-page>
             <ons-toolbar>
                 <div class="left"><ons-back-button>Back</ons-back-button></div>
-                <div class="center">Page 2</div>
+                <div class="center">Page about</div>
             </ons-toolbar>
             <div style="text-align: center; margin-top: 100px;">
                 <ons-button modifier="light" onclick="myNavigator.popPage()">
@@ -85,10 +37,11 @@
                 </ons-button>
             </div>
         </ons-page>
+
     </ons-template>
 
-  
-    <!--<ons-navigator title="Navigator" var="myNavigator">
+
+    <ons-navigator title="Navigator" var="myNavigator">
 
         <ons-tabbar>
             <ons-tab page="HomePage.html" label="Home" icon="ion-home" active="true"></ons-tab>
@@ -101,7 +54,7 @@
             </ons-tab>
             <ons-tab page="HomePage.html" label="More" icon="ion-navicon-round"></ons-tab>
         </ons-tabbar>
-    </ons-navigator>-->
+    </ons-navigator>
 
 
 
@@ -109,7 +62,7 @@
         <ons-navigator>
             <ons-page modifier="shop-details">
                 <div class="">
-                    <img src="app/css/images/marc.jpg" class="img-responsive img-thumbnail" />
+                    <img src="app/images/banner.jpeg" class="bannerStyle" />
                     <!--<div class="card-name">Marc</div>
                     <div class="card-desc">The New LookBook 08/2015</div>-->
                 </div>
@@ -152,33 +105,74 @@
                     </ons-list-item>
                 </ons-list>
 
+
+                <ons-list style="margin-top: 5px;">
+                    <ons-list-item style=" line-height :1">
+
+                        <ons-row>
+                            <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
+
+                                <ons-carousel-item>
+                                    <ons-carousel-item-cover class="cover-label">Coats & outerwear</ons-carousel-item-cover>
+                                </ons-carousel-item>
+
+                                <ons-carousel-item style="background-color: orange">
+                                    <ons-carousel-item-cover class="cover-label">Dresses</ons-carousel-item-cover>
+                                </ons-carousel-item>
+
+
+                                <ons-carousel-item style="background-color: pink">
+                                    <ons-carousel-item-cover class="cover-label">Bottoms</ons-carousel-item-cover>
+                                </ons-carousel-item>
+
+                                <!--  <ons-carousel-cover><div class="cover-label">Swipe left or right</div></ons-carousel-cover>-->
+                            </ons-carousel>
+                        </ons-row>
+                    </ons-list-item>
+                </ons-list>
+
+
+
+
+                <!--<ons-list style="border-top: none">
+                    <ons-list-item style="line-height: 1">
+
+                        <ons-row style="padding: 5px;">
+
+                            <ons-col style="padding-left: 5px; padding-right:5px; ">
+                                <img src="app/images/coat.jpg" class="img-responsive img-thumbnail bannerStyle" />
+
+                            </ons-col>
+
+                            <ons-col>
+                                <img src="app/images/dresses.jpg" class="img-responsive img-thumbnail bannerStyle" />
+                            </ons-col>
+
+                            <ons-col>
+                                <img src="app/images/boot.jpg" class="img-responsive img-thumbnail  bannerStyle" />
+                            </ons-col>
+
+                        </ons-row>
+                    </ons-list-item>
+                </ons-list>-->
+
+
+
                 <ons-list style="margin-top: 12px;">
-                    <ons-list-item modifier="chevron">
-                        <!--<div class="prop-desc">
-                            <ons-icon icon="ion-ios-location" size="28px"></ons-icon>
-                            Shop The LookBook
-                        </div>-->
-                        <img src="app/images/lookbooks.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
-                    </ons-list-item>
-
-                    <ons-list-item modifier="chevron">
-                        <!--<div class="prop-desc">
-                            <ons-icon icon="ion-ios-location" size="28px"></ons-icon>
-                            Dresses
-                        </div>-->
-                        <img src="app/images/dresses.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
-                    </ons-list-item>
-
-                    <ons-list-item modifier="chevron">
-                        <!--<ons-icon icon="ion-iphone" size="28px"></ons-icon>
-                        Tops-->
-                        <img src="app/images/tops.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                    <ons-list-item>
+                        <img src="app/images/lookbook4No3.png" class="bannerStyle" />
                     </ons-list-item>
 
                     <ons-list-item>
-                        <!--<ons-icon icon="ion-android-cart"></ons-icon>
-                        Bottoms-->
-                        <img src="app/images/bottoms.jpeg" class="img-responsive img-thumbnail" style="max-height:260px;" />
+                        <img src="app/images/lookbook5.jpeg" class="bannerStyle" />
+                    </ons-list-item>
+
+                    <ons-list-item>
+                        <img src="app/images/lookbook4.jpeg" class="bannerStyle" />
+                    </ons-list-item>
+
+                    <ons-list-item>
+                        <img src="app/images/lookbookSpring.jpeg" class="bannerStyle" />
                     </ons-list-item>
 
                 </ons-list>

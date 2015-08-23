@@ -111,7 +111,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="www\app\css\details.css" />
-    <Content Include="www\app\css\images\marc.jpg" />
     <Content Include="www\app\css\layoutStyle.css" />
     <Content Include="www\app\css\lib\bootstrap\bootstrap-theme.css" />
     <Content Include="www\app\css\lib\bootstrap\bootstrap-theme.css.map" />
@@ -146,10 +145,13 @@
     <Content Include="www\app\css\lib\onsen\onsen-css-components-sunshine-theme.css" />
     <Content Include="www\app\css\lib\onsen\onsen-css-components.css" />
     <Content Include="www\app\css\lib\onsen\onsenui.css" />
-    <Content Include="www\app\images\bottoms.jpeg" />
-    <Content Include="www\app\images\dresses.jpeg" />
-    <Content Include="www\app\images\lookbooks.jpeg" />
-    <Content Include="www\app\images\tops.jpeg" />
+    <Content Include="www\app\images\burton.jpg" />
+    <Content Include="www\app\images\getthebest.jpg" />
+    <Content Include="www\app\images\banner.jpg" />
+    <Content Include="www\app\images\falljacket.jpg" />
+    <Content Include="www\app\images\nextSeason.jpg" />
+    <Content Include="www\app\images\onsale.jpg" />
+    <Content Include="www\app\images\upto50.jpg" />
     <Content Include="www\app\scripts\index.js" />
     <Content Include="www\app\scripts\lib\angular\angular-animate.js" />
     <Content Include="www\app\scripts\lib\angular\angular-animate.min.js" />
