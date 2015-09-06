@@ -109,9 +109,10 @@
 
 .menu-notification {
     display: inline-block;
-    margin-top: -5px;
-    margin-left: -5px;
-    font-size: 14px;
+    z-index: 999;
+    margin-top: -3px;
+    margin-left: -10px;
+    font-size: 12px;
     height: 16px;
     line-height: 16px;
     -moz-min-width: 16px;

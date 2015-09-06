@@ -145,10 +145,12 @@
     <Content Include="www\app\css\lib\onsen\onsen-css-components-sunshine-theme.css" />
     <Content Include="www\app\css\lib\onsen\onsen-css-components.css" />
     <Content Include="www\app\css\lib\onsen\onsenui.css" />
+    <Content Include="www\app\images\profile.jpg" />
     <Content Include="www\app\images\burton.jpg" />
     <Content Include="www\app\images\getthebest.jpg" />
     <Content Include="www\app\images\banner.jpg" />
     <Content Include="www\app\images\falljacket.jpg" />
+    <Content Include="www\app\images\logo.png" />
     <Content Include="www\app\images\nextSeason.jpg" />
     <Content Include="www\app\images\onsale.jpg" />
     <Content Include="www\app\images\upto50.jpg" />
@@ -197,12 +199,23 @@
     <Content Include="www\app\scripts\lib\jquery\jquery.min.map" />
     <Content Include="www\app\scripts\lib\onsen\onsenui.js" />
     <Content Include="www\app\scripts\lib\onsen\onsenui.min.js" />
+    <Content Include="www\app\scripts\lib\onsen\onsenui.min.js.map">
+      <DependentUpon>onsenui.min.js</DependentUpon>
+    </Content>
     <Content Include="www\app\scripts\lib\onsen\onsenui_all.js" />
     <Content Include="www\app\scripts\lib\onsen\onsenui_all.min.js" />
     <Content Include="www\app\scripts\platformOverrides.js" />
     <Content Include="www\app\views\about.html" />
+    <Content Include="www\app\views\account.html" />
     <Content Include="www\app\views\albums.html" />
-    <Content Include="www\app\views\options.html" />
+    <Content Include="www\app\views\bannerFarvorite.html" />
+    <Content Include="www\app\views\bannerMenu.html" />
+    <Content Include="www\app\views\categories.html" />
+    <Content Include="www\app\views\favorites.html" />
+    <Content Include="www\app\views\filterMenu.html" />
+    <Content Include="www\app\views\home.html" />
+    <Content Include="www\app\views\sale.html" />
+    <Content Include="www\app\views\shoppingCart.html" />
     <Content Include="www\index.html" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
